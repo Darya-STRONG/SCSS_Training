@@ -4,11 +4,31 @@ $bg: #f0f0f0;
 $white: #fff;
 $shadow: #8080803a;
 
+$bradius:10px;
+
+$skillsBlue:#2f80adb3;
+$pd:1.5rem;
+$btnBlue:#5c94e1;
+
 @mixin cardStyle {
   background: $white;
   padding: 1.5rem;
   box-shadow: 0 0 5px $shadow;
-  border-radius: 10px;
+  border-radius: $bradius;
+}
+@mixin barAnimation($name, $last) {
+  @keyframes #{$name} {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: $last;
+    }
+  }
+}
+
+@mixin nameAnim($name) {
+  animation: #{$name} 1000ms ease-out forwards;
 }
 
 *,
@@ -17,6 +37,13 @@ $shadow: #8080803a;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin: 3rem auto;
+  max-width: 500px;
 }
 
 body {
@@ -31,5 +58,9 @@ h1 {
 
 p {
   color: $heading2;
+}
+
+section > section {
+  margin-top: 2rem;
 }
 

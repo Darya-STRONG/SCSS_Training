@@ -5,42 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
   </head>
   <body>
-    <section class="profile">
-      <img
-        src="./images/team-1-800x800.jpg"
-        alt="profile image"
-        class="profile__img"
-      />
-      <div class="profile__content">
-        <div class="profile__content__header">
-          <h1>Jome Favorite</h1>
-          <p>Aspiring Full-Stach Developer</p>
+    <main class="container">
+      <section class="profile">
+        <img
+          src="./images/team-1-800x800.jpg"
+          alt="profile image"
+          class="profile__img"
+        />
+        <div class="profile__content">
+          <div class="profile__content__header">
+            <h1>Jome Favorite</h1>
+            <p>Aspiring Full-Stach Developer</p>
+          </div>
+          <address class="profile__content__contact">
+            <p>
+              <span class="icon">
+                <img src="./images/mail.svg" alt="icon"/>
+              </span>
+              <span> jfjomefavorite@gmail.com </span>
+            </p>
+            <p>
+              <span class="icon">
+                <img src="./images/phone.svg" alt="icon phone"/>
+              </span>
+              <span> (+603) 546 625 343 </span>
+            </p>
+          </address>
+          <div class="profile__content__intro">
+            <p>
+              Self-motivation developer, whi is willing to learn and create
+              outsatanding UI applications.
+            </p>
+          </div>
         </div>
-
-        <address class="profile__content__contact">
-          <p>
-            <span class="icon">
-              <img src="./images/mail.svg" alt="icon"/>
-            </span>
-            <span> jfjomefavorite@gmail.com </span>
-          </p>
-          <p>
-            <span class="icon">
-              <img src="./images/phone.svg" alt="icon phone"/>
-            </span>
-            <span> (+603) 546 625 343 </span>
-          </p>
-        </address>
-        <div class="profile__content__intro">
-          <p>
-            Self-motivation developer, whi is willing to learn and create
-            outsatanding UI applications.
-          </p>
+      </section>
+      <section class="skills__container">
+        <div class="skill">
+          <h3>Front End</h3>
+          <div class="skill__item">
+            <p>
+              html
+            </p>
+            <div class="skill__item__bar skill__item__bar--one"></div>
+          </div>
+          <div class="skill__item">
+            <p>CSS</p>
+            <div class="skill__item__bar skill__item__bar--two"></div>
+          </div>
+          <div class="skill__item">
+            <p>JAVASCRIPT</p>
+            <div class="skill__item__bar skill__item__bar--three"></div>
+          </div>
+          <div class="skill__item">
+            <p>SASS</p>
+            <div class="skill__item__bar skill__item__bar--four"></div>
+          </div>
         </div>
-      </div>
-    </section>
+   
+        <div class="skill">
+          <h3>Desing</h3>
+          <div class="skill__item">
+            <p>Figma</p>
+            <div class="skill__item__bar skill__item__bar--desing1"></div>
+          </div>
+          <div class="skill__item">
+            <p>Adobe Illustrator</p>
+            <div class="skill__item__bar skill__item__bar--desing2"></div>
+          </div>
+        </div>
+      </section>
+      <section class="experience__section">
+        <h2>Experiences</h2>
+        <div class="experience__gred">
+          <!--One-->
+          <div class="experience">
+            <div class="experience__icon">
+              <img class="experience__icon__img" src="./images/windows.svg" alt="windows">
+            </div>
+            <div class="experience__content">
+              <small>Feb 2019 - Current</small>
+              <h3>Full-stack developer</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro tempora quam, modi fugit iusto dolorum tempore consectetur? Enim iure, veniam vero dolorem adipisci soluta vitae itaque distinctio qui similique!</p>
+            </div>
+          </div>
+          <!--Two-->
+          <div class="experience">
+            <div class="experience__icon">
+              <img class="experience__icon__img" src="./images/facebook.svg" alt="facebook image">
+            </div>
+            <div class="experience__content">
+              <small>Aug 2018 - Feb 2019</small>
+              <h3>Full-stack developer</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, possimus.</p>
+            </div>
+          </div>
+          <!--Three-->
+          <div class="experience">
+            <div class="experience__icon">
+              <img class="experience__icon__img" src="./images/netflix.svg" alt="netflix">
+            </div>
+            <div class="experience__content">
+              <small>Jun 2015 - July 2018</small>
+              <h3>Junior Front-end developer</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro tempora quam, modi fugit iusto dolorum tempore consectetur? Enim iure, veniam vero dolorem adipisci soluta vitae itaque distinctio qui similique!</p>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+    </main>
   </body>
 </html>
