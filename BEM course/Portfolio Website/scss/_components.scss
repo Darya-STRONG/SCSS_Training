@@ -1,0 +1,32 @@
+.profile {
+  @include cardStyle();
+
+  width: 90%;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+
+  &__img {
+    width: 100%;
+    border-radius: 15px;
+    height: 367.15px;
+    object-fit: cover;
+  }
+  &__content__header {
+    margin: 0.5em 0;
+  }
+  &__content__contact {
+    margin: 0.8rem 0;
+  }
+  &__content__contact .icon {
+    display: inline-block;
+    width: 20px;
+    margin-right: 10px;
+  }
+  &__content__contact p {
+    display: flex;  
+  }
+}
+
+
+

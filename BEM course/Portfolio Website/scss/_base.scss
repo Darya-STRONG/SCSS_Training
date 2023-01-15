@@ -1,0 +1,35 @@
+$heading: #4f4f4f;
+$heading2: #828282;
+$bg: #f0f0f0;
+$white: #fff;
+$shadow: #8080803a;
+
+@mixin cardStyle {
+  background: $white;
+  padding: 1.5rem;
+  box-shadow: 0 0 5px $shadow;
+  border-radius: 10px;
+}
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  font-size: 14px;
+  background: var(--bg);
+}
+
+h1 {
+  color: $heading;
+}
+
+p {
+  color: $heading2;
+}
+
